@@ -1,4 +1,4 @@
-import {createBox} from './selector.js'
+import {createBox} from './selectors.js'
 
 export let boxes = []
 

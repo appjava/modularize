@@ -1,12 +1,5 @@
 import { Box, boxes } from './classes.js';
-import {
- boxHeight,
- boxWidth,
- boxColor,
- boxName,
- button,
- boxStorage
-} from './selectors.js';
+import {boxHeight, boxWidth, boxColor, boxName, button, boxStorage} from './selectors.js';
 
 function addBox(name, color, h, w) {
     let box = new Box(name, color, h, w);
