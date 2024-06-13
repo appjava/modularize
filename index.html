@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modularize APP</title>
+    <link rel="stylesheet" href="./style.css" >
     <script src="./js/main.js" defer type="module"></script>
+
 </head>
 <body>
+    <div class="container">
+        <div class="form">
+          <div class="item1">
+            <label from="box-name">name</label>
+            <input type="text" name="box-name">
+          </div>
     
+          <div class="item2">
+            <label from="color">Color</label>
+            <input type="color" name="color">
+          </div>
+    
+          <div class="item3">
+            <label from="height">height</label>
+            <input type="number" name="height" name="width" min="10" max="500"
+              step="10">
+          </div>
+    
+          <div class="item4">
+            <label from="width">width</label>
+            <input type="number" name="width" min="10" max="500" step="10">
+          </div>
+          <button>Create Box</button>
+        </div>
+    
+        <div class="box-storage">
+            <!-- This is where will put our boxes -->
+        </div>
+    </div>
 </body>
 </html>
