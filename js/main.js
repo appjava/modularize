@@ -6,12 +6,6 @@ function addBox(name, color, h, w) {
     box.initBox();
   }
 
-  button.addEventListener('click', () => {
-    addBox(boxName.value, boxColor.value, boxHeight.value, boxWidth.value);
-    boxName.value = '';
-      //this will remove the name value.
-  });
-
   function update() {
     for (let i = 0; i < boxes.length; i++) {
       boxStorage.appendChild(boxes[i]);
@@ -19,7 +13,11 @@ function addBox(name, color, h, w) {
   }
   // also update needs to be called when ever we create a new box
   button.addEventListener('click', () => {
-    addBox(boxName.value, boxColor.value, boxHeight.value, boxWidth.value);
-    update(); // add this to event listener
-    boxName.value = '';
+    if (boxName.value === ''){
+        alert("Please give name, thanks!")
+    } else{
+        addBox(boxName.value, boxColor.value, boxHeight.value, boxWidth.value);
+        update(); // add this to event listener
+        boxName.value = ''; //this will remove the name value.
+    }
   });

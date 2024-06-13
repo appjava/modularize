@@ -20,6 +20,7 @@ export class Box {
         htmlBox.style.margin = '6px';
         htmlBox.style.backgroundColor = this.color;
         htmlBox.innerHTML = this.name;
+        htmlBox.style.borderRadius = '12px';
         boxes.push(htmlBox);
       }
 
